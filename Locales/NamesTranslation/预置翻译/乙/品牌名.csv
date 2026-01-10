@@ -1,0 +1,195 @@
+﻿品牌ID,行业信息,官译_品牌名,你的翻译_品牌名
+269,"公司: Industrial_WarehouseConvenienceFood; Industrial_ConvenienceFoodFromLivestockFactory; Industrial_ConvenienceFoodFromGrainFactory; Commercial_ConvenienceFoodStore | 行业: Output:ConvenienceFood; Input1:Livestock, Output:ConvenienceFood; Input1:Grain, Output:ConvenienceFood; Input1:ConvenienceFood, Output:ConvenienceFood, Type:Service",269,二六九速食
+Aivatsu,"公司: Industrial_WarehouseVehicles; Industrial_WarehouseMachinery; Industrial_MachineryFactory; Industrial_VehicleFactory; Commercial_VehicleStore | 行业: Output:Vehicles; Output:Machinery; Input1:Metals, Input2:Steel, Output:Machinery; Input1:Metals, Input2:Plastics, Output:Vehicles; Input1:Vehicles, Output:Vehicles, Type:Service",Aivatsu,爱驰汽车
+AlkenesCracking,"公司: Industrial_WarehouseOil; Industrial_OilExtractor; Industrial_OilRefinery | 行业: Output:Oil; Input1:Oil, Output:Petrochemicals",Alkenes Cracking,裂烯石化
+AllmostMeat,"公司: Industrial_WarehouseFood; Industrial_WarehouseVegetables; Industrial_VegetableExtractor; Industrial_FoodFactory; Commercial_FoodStore | 行业: Output:Food; Output:Vegetables; Input1:Vegetables, Input2:Livestock, Output:Food; Input1:Food, Output:Food, Type:Service",Allmost Meat,鲜满堂食品
+AnnusInteriorDesign,"公司: Commercial_FurnitureStore | 行业: Input1:Furniture, Output:Furniture, Type:Service",Annu's Interior Design,安居家饰
+AshtrainRecords,"公司: Office_MediaCompany | 行业: Input1:Software, Output:Media",Ashtrain Records,雨落唱片
+BanhammerBank,"公司: Office_Bank | 行业: Input1:Software, Output:Financial",Banhammer Bank,重锤银行
+Barbarshop,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Barbarshop,蛮刃造型
+BarkMillTannery,"公司: Industrial_WarehouseTextiles; Industrial_TextileFromLivestockFactory | 行业: Output:Textiles; Input1:Livestock, Output:Textiles",Bark Mill Tannery,树皮坊皮业
+BedbugHostel,"公司: Commercial_Hotel | 行业: Input1:Food, Output:Lodging, Type:Service",Bedbug Hostel,凑合住旅馆
+BellAndCog,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Bell & Cog,铃齿五金
+BendyLetters,"公司: Office_MediaCompany | 行业: Input1:Software, Output:Media",Bendy Letters,曲字传媒
+Bentzel,"公司: Industrial_WarehouseVehicles; Industrial_WarehouseMachinery; Industrial_MachineryFactory; Industrial_VehicleFactory; Commercial_VehicleStore | 行业: Output:Vehicles; Output:Machinery; Input1:Metals, Input2:Steel, Output:Machinery; Input1:Metals, Input2:Plastics, Output:Vehicles; Input1:Vehicles, Output:Vehicles, Type:Service",Bentzel,奔驰重工
+BevPop,"公司: Industrial_WarehouseBeverages; Commercial_Bar; Industrial_BeverageFromGrainFactory; Industrial_BeverageFromVegetablesFactory | 行业: Output:Beverages; Input1:Beverages, Output:Entertainment, Type:Service; Input1:Grain, Output:Beverages; Input1:Vegetables, Output:Beverages",BevPop,气泡嘭饮料
+BigFeetInc,"公司: Commercial_FashionStore | 行业: Input1:Textiles, Output:Textiles, Type:Service",Big feet inc.,大步鞋业
+BootAndBug,"公司: Office_SoftwareCompany; Office_MediaCompany | 行业: Input1:Electronics, Output:Software; Input1:Software, Output:Media",Boot and Bug,闪崩软件
+BowmanBanking,"公司: Office_Bank | 行业: Input1:Software, Output:Financial",Bowman Banking,弓箭手银行
+BragAndRoost,"公司: Commercial_Hotel | 行业: Input1:Food, Output:Lodging, Type:Service",Brag & Roost,悠栖客栈
+BuccalMucosa,"公司: Commercial_Restaurant | 行业: Input1:Food, Output:Meals, Type:Service",Buccal Mucosa,齿颊留香
+Bumberfuel,"公司: Industrial_WarehouseOil; Industrial_WarehousePetrochemicals; Industrial_OilExtractor; Industrial_OilRefinery; Commercial_GasStation | 行业: Output:Oil; Output:Petrochemicals; Input1:Oil, Output:Petrochemicals; Input1:Petrochemicals, Output:Petrochemicals, Type:Service",Bumberfuel,满仓石油
+BurlyAndBrawny,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Burly and Brawny,壮威健身
+BurnedBean,"公司: Industrial_WarehouseConvenienceFood; Commercial_Restaurant | 行业: Output:ConvenienceFood; Input1:Food, Output:Meals, Type:Service",Burned Bean,焦香咖啡
+CardioPatio,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Cardio Patio,心悦运动
+Carpoco,"公司: Industrial_WarehousePaper; Industrial_WarehouseWood; Industrial_ForestryExtractor; Industrial_PaperMill | 行业: Output:Paper; Output:Wood; Input1:Timber, Output:Paper",Carpoco,卡博纸业
+CatInACabin,"公司: Industrial_WarehousePlastics; Commercial_PlasticsStore | 行业: Output:Plastics; Input1:Plastics, Output:Plastics, Type:Service",Cat In A Cabin,猫居塑胶
+Cebeliverse,"公司: Office_SoftwareCompany | 行业: Input1:Electronics, Output:Software",Cebeliverse,赛博宇宙
+ChachiThreads,"公司: Industrial_WarehouseTextiles; Commercial_FashionStore | 行业: Output:Textiles; Input1:Textiles, Output:Textiles, Type:Service",Chachi Threads,潮织服饰
+CheapAndRandom,"公司: Industrial_WarehouseCotton; Industrial_WarehouseTextiles; Industrial_CottonExtractor; Industrial_TextileFromCottonFactory; Commercial_FashionStore | 行业: Output:Cotton; Output:Textiles; Input1:Cotton, Output:Textiles; Input1:Textiles, Output:Textiles, Type:Service",Cheap & Random,淘衣坊
+Chemicalore,"公司: Industrial_WarehouseChemicals; Industrial_ChemicalFactory; Commercial_ChemicalStore | 行业: Output:Chemicals; Input1:Minerals, Input2:Oil, Output:Chemicals; Input1:Chemicals, Output:Chemicals, Type:Service",Chemicalore,彩丽日化
+ChemtrailChemicals,"公司: Industrial_WarehouseChemicals; Industrial_ChemicalFactory; Commercial_ChemicalStore | 行业: Output:Chemicals; Input1:Minerals, Input2:Oil, Output:Chemicals; Input1:Chemicals, Output:Chemicals, Type:Service",Chemtrail Chemicals,云迹化工
+Chipperstein,"公司: Industrial_WarehouseWood; Industrial_WarehouseTimber; Industrial_ForestryExtractor; Industrial_SawMill | 行业: Output:Wood; Output:Timber; Input1:Wood, Output:Timber",Chipperstein,奇木坊
+ChirperToys,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Chirper Toys,啾啾玩具
+ChirpyTeck,"公司: Office_SoftwareCompany | 行业: Input1:Electronics, Output:Software",Chirpy Teck,雀语软件
+ColossalOre,"公司: Industrial_WarehouseOre; Industrial_WarehouseStone; Industrial_WarehouseCoal; Industrial_OreExtractor; Industrial_CoalMine; Industrial_StoneQuarry | 行业: Output:Ore; Output:Stone; Output:Coal",Colossal Ore,巨石矿业
+CommonGroceries,"公司: Industrial_WarehouseConvenienceFood; Industrial_WarehouseBeverages; Industrial_WarehouseFood; Industrial_WarehouseVegetables; Industrial_VegetableExtractor; Commercial_FoodStore | 行业: Output:ConvenienceFood; Output:Beverages; Output:Food; Output:Vegetables; Input1:Food, Output:Food, Type:Service",Common Groceries,邻里生鲜
+ConsilioBombacio,"公司: Commercial_FashionStore | 行业: Input1:Textiles, Output:Textiles, Type:Service",Consilio Bombacio,康思棉坊
+ConsumerApparel,"公司: Industrial_WarehouseCotton; Industrial_WarehouseTextiles; Industrial_CottonExtractor; Industrial_TextileFromCottonFactory; Commercial_FashionStore | 行业: Output:Cotton; Output:Textiles; Input1:Cotton, Output:Textiles; Input1:Textiles, Output:Textiles, Type:Service",Consumer Apparel,潮流阵线
+CottonOrder,"公司: Industrial_WarehouseCotton; Industrial_CottonExtractor; Industrial_TextileFromCottonFactory | 行业: Output:Cotton; Input1:Cotton, Output:Textiles",Cotton Order,锦棉织造
+CrapfishGranules,"公司: Industrial_WarehousePlastics; Industrial_PlasticsFactory; Commercial_PlasticsStore | 行业: Output:Plastics; Input1:Petrochemicals, Input2:Chemicals, Output:Plastics; Input1:Plastics, Output:Plastics, Type:Service",Crapfish Granules,锐普塑胶
+CrazyColibri,"公司: Commercial_Bar; Commercial_LiquorStore | 行业: Input1:Beverages, Output:Entertainment, Type:Service; Input1:Beverages, Output:Beverages, Type:Service",Crazy Colibri,醉蜂鸟酒吧
+CRIMoore,"公司: Office_SoftwareCompany; Office_Bank | 行业: Input1:Electronics, Output:Software; Input1:Software, Output:Financial",CRI Moore,信睿金科
+CrocodilesHook,"公司: Industrial_WarehouseConvenienceFood; Industrial_WarehouseBeverages; Commercial_Restaurant | 行业: Output:ConvenienceFood; Output:Beverages; Input1:Food, Output:Meals, Type:Service",Crocodiles Hook,鳄钩餐厅
+Cryersters,"公司: Industrial_WarehouseVehicles; Industrial_VehicleFactory; Commercial_VehicleStore | 行业: Output:Vehicles; Input1:Metals, Input2:Plastics, Output:Vehicles; Input1:Vehicles, Output:Vehicles, Type:Service",Cryersters,凯瑞斯汽车
+DamienBite,"公司: Commercial_Restaurant | 行业: Input1:Food, Output:Meals, Type:Service",Damien Bite,鲜一口
+DamskusDiner,"公司: Commercial_Restaurant | 行业: Input1:Food, Output:Meals, Type:Service",Damsku's Diner,达姆食堂
+DennyAlsLaw,"公司: Office_SoftwareCompany | 行业: Input1:Electronics, Output:Software",Denny Als Law,丹尼法务通
+DennyDenims,"公司: Industrial_WarehouseTextiles; Commercial_FashionStore | 行业: Output:Textiles; Input1:Textiles, Output:Textiles, Type:Service",Denny Denims,丹尼牛仔
+DiningFine,"公司: Commercial_Restaurant | 行业: Input1:Food, Output:Meals, Type:Service",Dining Fine,雅膳轩
+DLCHut,"公司: Commercial_RecreactionStore; Office_SoftwareCompany | 行业: Output:Recreation, Type:Service; Input1:Electronics, Output:Software",DLC Hut,氪金小屋
+Dobbelbock,"公司: Industrial_WarehouseLivestock; Industrial_LivestockExtractor; Industrial_FoodFactory | 行业: Output:Livestock; Input1:Vegetables, Input2:Livestock, Output:Food",Döbbelböck,多倍肉坊
+DromeCinema,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Drome Cinema,穹顶影院
+Drydemans,"公司: Industrial_WarehouseLivestock; Industrial_LivestockExtractor; Industrial_FoodFactory | 行业: Output:Livestock; Input1:Vegetables, Input2:Livestock, Output:Food",Drydemans,德里曼肉业
+DryLaundry,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Dry Laundry,干洁洗护
+Duckytoi,"公司: Industrial_WarehousePlastics; Industrial_PlasticsFactory; Commercial_PlasticsStore | 行业: Output:Plastics; Input1:Petrochemicals, Input2:Chemicals, Output:Plastics; Input1:Plastics, Output:Plastics, Type:Service",Duckytoi,萌鸭塑胶
+Eino,"公司: Industrial_WarehouseOil; Industrial_WarehousePetrochemicals; Industrial_OilExtractor; Industrial_BioRefinery; Industrial_OilRefinery; Commercial_GasStation | 行业: Output:Oil; Output:Petrochemicals; Input1:Grain, Output:Petrochemicals; Input1:Oil, Output:Petrochemicals; Input1:Petrochemicals, Output:Petrochemicals, Type:Service",Eino,艾诺能源
+FabioAArtGallery,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Fabio A. Art Gallery,费比艺廊
+Fabricios,"公司: Industrial_WarehouseTextiles; Industrial_TextileFromCottonFactory; Industrial_TextileFromPetrochemicalsFactory | 行业: Output:Textiles; Input1:Cotton, Output:Textiles; Input1:Petrochemicals, Output:Textiles",Fabricio's,锦织纺业
+FattyBite,"公司: Industrial_WarehouseConvenienceFood; Commercial_Restaurant; Industrial_ConvenienceFoodFromLivestockFactory; Commercial_ConvenienceFoodStore | 行业: Output:ConvenienceFood; Input1:Food, Output:Meals, Type:Service; Input1:Livestock, Output:ConvenienceFood; Input1:ConvenienceFood, Output:ConvenienceFood, Type:Service",Fatty Bite,肥美滋
+FaultStudios,"公司: Office_SoftwareCompany | 行业: Input1:Electronics, Output:Software",Fault Studios,漏洞工坊
+FetchAMovie,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Fetch a Movie,淘碟影音
+FilmFileRental,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Film File Rental,影档出租
+FixedTraffic,"公司: Office_SoftwareCompany | 行业: Input1:Electronics, Output:Software",Fixed Traffic,畅路软件
+FlowersFlours,"公司: Industrial_WarehouseGrain; Industrial_GrainExtractor; Industrial_ConvenienceFoodFromGrainFactory | 行业: Output:Grain; Input1:Grain, Output:ConvenienceFood",Flowers Flours,花香面业
+FreshPots,"公司: Commercial_Restaurant | 行业: Input1:Food, Output:Meals, Type:Service",Fresh Pots,鲜锅记
+Fries,"公司: Industrial_WarehouseVegetables; Commercial_Restaurant; Industrial_VegetableExtractor | 行业: Output:Vegetables; Input1:Food, Output:Meals, Type:Service",Fries,金薯餐厅
+FullOfFoods,"公司: Industrial_WarehouseConvenienceFood; Industrial_WarehouseFood; Industrial_WarehouseVegetables; Industrial_FoodFactory; Commercial_FoodStore | 行业: Output:ConvenienceFood; Output:Food; Output:Vegetables; Input1:Vegetables, Input2:Livestock, Output:Food; Input1:Food, Output:Food, Type:Service",Full of Foods,满福食汇
+FullSkillGrinding,"公司: Industrial_WarehouseOre; Industrial_WarehouseStone; Industrial_WarehouseCoal; Industrial_WarehouseConcrete; Industrial_OreExtractor; Industrial_CoalMine; Industrial_StoneQuarry; Industrial_ConcreteFactory | 行业: Output:Ore; Output:Stone; Output:Coal; Output:Concrete; Input1:Stone, Output:Concrete",Full Skill Grinding,满功研磨
+GoNutsDoughnuts,"公司: Industrial_WarehouseConvenienceFood; Commercial_Restaurant; Industrial_ConvenienceFoodFromGrainFactory | 行业: Output:ConvenienceFood; Input1:Food, Output:Meals, Type:Service; Input1:Grain, Output:ConvenienceFood",Go Nuts Doughnuts,疯圈甜点
+GrandMargay,"公司: Industrial_WarehouseVehicles; Industrial_VehicleFactory; Commercial_VehicleStore | 行业: Output:Vehicles; Input1:Metals, Input2:Plastics, Output:Vehicles; Input1:Vehicles, Output:Vehicles, Type:Service",Grand Margay,虎豹汽车
+GreedAndGrief,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Greed & Grief,悲欢桌游
+GreenoughBiofuel,"公司: Industrial_WarehouseGrain; Industrial_WarehousePetrochemicals; Industrial_GrainExtractor; Industrial_BioRefinery; Commercial_GasStation | 行业: Output:Grain; Output:Petrochemicals; Input1:Grain, Output:Petrochemicals; Input1:Petrochemicals, Output:Petrochemicals, Type:Service",Greenough Biofuel,够绿生物能
+GrindARock,"公司: Industrial_WarehouseOre; Industrial_WarehouseStone; Industrial_WarehouseCoal; Industrial_WarehouseConcrete; Industrial_OreExtractor; Industrial_CoalMine; Industrial_StoneQuarry; Industrial_ConcreteFactory | 行业: Output:Ore; Output:Stone; Output:Coal; Output:Concrete; Input1:Stone, Output:Concrete",Grind a Rock,磨砾建工
+GrunKuh,"公司: Industrial_WarehouseConvenienceFood; Industrial_WarehouseLivestock; Industrial_LivestockExtractor; Industrial_ConvenienceFoodFromLivestockFactory | 行业: Output:ConvenienceFood; Output:Livestock; Input1:Livestock, Output:ConvenienceFood",Grün Kuh,青牧食品
+HalfAGrain,"公司: Industrial_WarehouseConvenienceFood; Industrial_WarehouseGrain; Industrial_GrainExtractor; Industrial_ConvenienceFoodFromGrainFactory | 行业: Output:ConvenienceFood; Output:Grain; Input1:Grain, Output:ConvenienceFood",Half a Grain,粒粒香
+HandAHammer,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Hand a Hammer,巧锤工坊
+HardcopyBookstore,"公司: Commercial_BookStore | 行业: Input1:Paper, Output:Paper, Type:Service",Hardcopy Bookstore,实本书店
+IBeamSteel,"公司: Industrial_WarehouseSteel; Industrial_SteelPlant | 行业: Output:Steel; Input1:Metals, Input2:Coal, Output:Steel",I Beam Steel,工梁钢铁
+IMutci,"公司: Commercial_Restaurant | 行业: Input1:Food, Output:Meals, Type:Service",I' Mutci,穆奇小馆
+IndieLizard,"公司: Office_MediaCompany | 行业: Input1:Software, Output:Media",Indie Lizard,独立蜥蜴传媒
+InfinityInks,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Infinity Inks,无尽墨坊
+InstaLOD,"公司: Office_SoftwareCompany | 行业: Input1:Electronics, Output:Software",InstaLOD,瞬捷软件
+InterIoreDesigns,"公司: Industrial_WarehouseFurniture; Commercial_FurnitureStore | 行业: Output:Furniture; Input1:Furniture, Output:Furniture, Type:Service",Inter Iore Designs,悦居家饰
+Kaagistan,"公司: Industrial_WarehouseFish; Commercial_Restaurant; Industrial_ConvenienceFoodFromFish | 行业: Output:Fish; Input1:Food, Output:Meals, Type:Service; Input1:Fish, Output:ConvenienceFood",Käägistan,鲜鱼坊
+Kapea,"公司: Industrial_WarehouseFurniture; Industrial_FurnitureFactory; Commercial_FurnitureStore | 行业: Output:Furniture; Input1:Timber, Output:Furniture; Input1:Furniture, Output:Furniture, Type:Service",Kapea,卡派家居
+Kapine,"公司: Industrial_WarehouseElectronics; Industrial_ElectronicsFactory; Office_MediaCompany; Office_TelecomCompany; Commercial_ElectronicsStore | 行业: Output:Electronics; Input1:Minerals, Input2:Plastics, Output:Electronics; Input1:Software, Output:Media; Input1:Electronics, Input2:Software, Output:Telecom; Input1:Electronics, Output:Electronics, Type:Service",Kapine,凯派电子
+KinoView,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",KinoView,影观天下
+KivivskiyJewelry,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Kivivskiy Jewelry,基维珠宝
+LaurisLentils,"公司: Industrial_WarehouseConvenienceFood; Industrial_WarehouseGrain; Industrial_GrainExtractor; Industrial_ConvenienceFoodFromGrainFactory; Commercial_ConvenienceFoodStore | 行业: Output:ConvenienceFood; Output:Grain; Input1:Grain, Output:ConvenienceFood; Input1:ConvenienceFood, Output:ConvenienceFood, Type:Service",Lauri's Lentils,劳里扁豆坊
+LeafyGreens,"公司: Industrial_WarehouseVegetables; Industrial_VegetableExtractor; Industrial_BeverageFromVegetablesFactory; Commercial_FoodStore; Commercial_ConvenienceFoodStore | 行业: Output:Vegetables; Input1:Vegetables, Output:Beverages; Input1:Food, Output:Food, Type:Service; Input1:ConvenienceFood, Output:ConvenienceFood, Type:Service",Leafy Greens,绿叶鲜蔬
+LehtoElectronics,"公司: Industrial_WarehouseElectronics; Industrial_ElectronicsFactory; Office_TelecomCompany; Commercial_ElectronicsStore | 行业: Output:Electronics; Input1:Minerals, Input2:Plastics, Output:Electronics; Input1:Electronics, Input2:Software, Output:Telecom; Input1:Electronics, Output:Electronics, Type:Service",Lehto Electronics,莱拓电子
+LFClothing,"公司: Industrial_WarehouseTextiles; Industrial_TextileFromCottonFactory; Industrial_TextileFromPetrochemicalsFactory; Commercial_FashionStore | 行业: Output:Textiles; Input1:Cotton, Output:Textiles; Input1:Petrochemicals, Output:Textiles; Input1:Textiles, Output:Textiles, Type:Service",LF Clothing,领风时装
+LifebeltPetroleum,"公司: Industrial_WarehouseOil; Industrial_OilExtractor; Industrial_OilRefinery | 行业: Output:Oil; Input1:Oil, Output:Petrochemicals",Lifebelt Petroleum,命脉石油
+Limzabar,"公司: Industrial_WarehouseBeverages; Commercial_Bar; Commercial_LiquorStore | 行业: Output:Beverages; Input1:Beverages, Output:Entertainment, Type:Service; Input1:Beverages, Output:Beverages, Type:Service",Limzabar,柠饮坊
+LittleBoxes,"公司: Industrial_WarehousePlastics; Industrial_PlasticsFactory; Commercial_PlasticsStore | 行业: Output:Plastics; Input1:Petrochemicals, Input2:Chemicals, Output:Plastics; Input1:Plastics, Output:Plastics, Type:Service",Little Boxes,方寸盒塑胶
+LodgesTravels,"公司: Commercial_Hotel | 行业: Input1:Food, Output:Lodging, Type:Service",Lodge's Travels,旅途客栈
+LoPo,"公司: Industrial_WarehouseOil; Industrial_WarehousePetrochemicals; Industrial_OilExtractor; Industrial_OilRefinery; Commercial_GasStation | 行业: Output:Oil; Output:Petrochemicals; Input1:Oil, Output:Petrochemicals; Input1:Petrochemicals, Output:Petrochemicals, Type:Service",LöPö,洛普能源
+LuiboDigital,"公司: Office_SoftwareCompany | 行业: Input1:Electronics, Output:Software",Luibo Digital,流博数码
+Maito,"公司: Industrial_WarehouseLivestock; Industrial_WarehouseBeverages; Industrial_LivestockExtractor; Commercial_LiquorStore | 行业: Output:Livestock; Output:Beverages; Input1:Beverages, Output:Beverages, Type:Service",Maito,美拓牧业
+MariinaM,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",MariinaM,玛丽娜手作
+MasonJar,"公司: Industrial_WarehouseMinerals; Industrial_MineralPlant | 行业: Output:Minerals; Input1:Stone, Output:Minerals",Mason Jar,聚石矿业
+Matheos,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Matheos,马修斯乐苑
+MattockAndWinch,"公司: Industrial_WarehouseMinerals; Industrial_MineralPlant | 行业: Output:Minerals; Input1:Stone, Output:Minerals",Mattock & Winch,镐绞矿产
+MeatyBits,"公司: Industrial_WarehouseLivestock; Industrial_LivestockExtractor; Industrial_ConvenienceFoodFromLivestockFactory | 行业: Output:Livestock; Input1:Livestock, Output:ConvenienceFood",Meaty Bits,肉多多
+Merinus,"公司: Industrial_WarehouseVehicles; Industrial_WarehouseMachinery; Industrial_MachineryFactory; Industrial_VehicleFactory; Commercial_VehicleStore | 行业: Output:Vehicles; Output:Machinery; Input1:Metals, Input2:Steel, Output:Machinery; Input1:Metals, Input2:Plastics, Output:Vehicles; Input1:Vehicles, Output:Vehicles, Type:Service",Merinus,海魄汽车
+MorellosCookieDough,"公司: Commercial_Restaurant | 行业: Input1:Food, Output:Meals, Type:Service",Morello's Cookie Dough,莫雷洛饼屋
+Motens,"公司: Commercial_Restaurant | 行业: Input1:Food, Output:Meals, Type:Service",Mötens,莫腾斯餐馆
+MouthwaterPress,"公司: Office_MediaCompany | 行业: Input1:Software, Output:Media",Mouthwater Press,垂涎传媒
+NeckbeardMikesComics,"公司: Commercial_BookStore | 行业: Input1:Paper, Output:Paper, Type:Service",Neckbeard Mike's Comics,髯叔漫屋
+NomSobaNoodle,"公司: Commercial_Restaurant | 行业: Input1:Food, Output:Meals, Type:Service",NomSoba Noodle,吸溜面馆
+NonsenseVintage,"公司: Commercial_FashionStore | 行业: Input1:Textiles, Output:Textiles, Type:Service",Nonsense Vintage,荒诞复古
+NorthNotesPaper,"公司: Industrial_WarehousePaper; Industrial_WarehouseWood; Industrial_ForestryExtractor; Industrial_PaperMill | 行业: Output:Paper; Output:Wood; Input1:Timber, Output:Paper",North Notes Paper,北辰纸业
+Obuwniczy,"公司: Industrial_TextileFromLivestockFactory; Commercial_FashionStore | 行业: Input1:Livestock, Output:Textiles; Input1:Textiles, Output:Textiles, Type:Service",Obuwniczy,奥步皮饰
+OceanportPharmaceuticals,"公司: Industrial_WarehousePharmaceuticals; Industrial_PharmaceuticalsFactory; Commercial_DrugStore | 行业: Output:Pharmaceuticals; Input1:Chemicals, Output:Pharmaceuticals; Input1:Pharmaceuticals, Output:Pharmaceuticals, Type:Service",Oceanport Pharmaceuticals,洋港制药
+OHFurniture,"公司: Industrial_WarehouseFurniture; Commercial_FurnitureStore | 行业: Output:Furniture; Input1:Furniture, Output:Furniture, Type:Service",OH Furniture,喔美家具
+OilAndGearGarage,"公司: Commercial_VehicleStore | 行业: Input1:Vehicles, Output:Vehicles, Type:Service",Oil & Gear Garage,油齿车坊
+Oiliwood,"公司: Industrial_WarehouseTimber; Industrial_FurnitureFactory | 行业: Output:Timber; Input1:Timber, Output:Furniture",Oiliwood,欧利木坊
+OldAndVinyl,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Old & Vinyl,流金黑胶
+Onshore,"公司: Industrial_WarehouseMinerals; Industrial_MineralPlant | 行业: Output:Minerals; Input1:Stone, Output:Minerals",Onshore,滨海矿业
+Ordinateur,"公司: Industrial_WarehouseElectronics; Industrial_ElectronicsFactory; Commercial_ElectronicsStore | 行业: Output:Electronics; Input1:Minerals, Input2:Plastics, Output:Electronics; Input1:Electronics, Output:Electronics, Type:Service",Ordinateur,奥迪纳数码
+OutlineRealEstate,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Outline Real Estate,宏图房产
+OutskirtsTannery,"公司: Industrial_TextileFromLivestockFactory | 行业: Input1:Livestock, Output:Textiles",Outskirts Tannery,郊野皮业
+PatbackMedical,"公司: Industrial_WarehousePharmaceuticals; Industrial_PharmaceuticalsFactory; Commercial_DrugStore | 行业: Output:Pharmaceuticals; Input1:Chemicals, Output:Pharmaceuticals; Input1:Pharmaceuticals, Output:Pharmaceuticals, Type:Service",Patback Medical,佰康医药
+PeacentPlanks,"公司: Industrial_WarehouseWood; Industrial_WarehouseTimber; Industrial_ForestryExtractor; Industrial_SawMill | 行业: Output:Wood; Output:Timber; Input1:Wood, Output:Timber",Peacent Planks,安馨木业
+PelicanBiofuel,"公司: Industrial_WarehouseGrain; Industrial_WarehousePetrochemicals; Industrial_GrainExtractor; Industrial_BioRefinery; Commercial_GasStation | 行业: Output:Grain; Output:Petrochemicals; Input1:Grain, Output:Petrochemicals; Input1:Petrochemicals, Output:Petrochemicals, Type:Service",Pelican Biofuel,鹈鹕生物能
+PellemyChemicals,"公司: Industrial_WarehouseChemicals; Industrial_ChemicalFactory; Commercial_ChemicalStore | 行业: Output:Chemicals; Input1:Minerals, Input2:Oil, Output:Chemicals; Input1:Chemicals, Output:Chemicals, Type:Service",Pellemy Chemicals,培利化工
+PernuApparel,"公司: Industrial_WarehouseTextiles; Industrial_TextileFromPetrochemicalsFactory; Commercial_FashionStore | 行业: Output:Textiles; Input1:Petrochemicals, Output:Textiles; Input1:Textiles, Output:Textiles, Type:Service",Pernu Apparel,帛努时装
+Pharmacy,"公司: Industrial_WarehousePharmaceuticals; Industrial_PharmaceuticalsFactory; Commercial_DrugStore | 行业: Output:Pharmaceuticals; Input1:Chemicals, Output:Pharmaceuticals; Input1:Pharmaceuticals, Output:Pharmaceuticals, Type:Service",Pharmacy,万泰大药房
+PhrasestackBooks,"公司: Commercial_BookStore | 行业: Input1:Paper, Output:Paper, Type:Service",Phrasestack Books,语苑书店
+Pihi,"公司: Office_Bank | 行业: Input1:Software, Output:Financial",Pihi,派汇金融
+Pilestack,"公司: Industrial_WarehouseTimber; Industrial_SawMill | 行业: Output:Timber; Input1:Wood, Output:Timber",Pilestack,聚木堆场
+Pilotee,"公司: Industrial_WarehouseVehicles; Industrial_WarehouseMachinery; Industrial_MachineryFactory; Industrial_VehicleFactory; Commercial_VehicleStore | 行业: Output:Vehicles; Output:Machinery; Input1:Metals, Input2:Steel, Output:Machinery; Input1:Metals, Input2:Plastics, Output:Vehicles; Input1:Vehicles, Output:Vehicles, Type:Service",Pilotee,御风汽车
+PinkAndSparkly,"公司: Industrial_ChemicalFactory; Commercial_ChemicalStore | 行业: Input1:Minerals, Input2:Oil, Output:Chemicals; Input1:Chemicals, Output:Chemicals, Type:Service",Pink & Sparkly,粉耀日化
+Placesstages,"公司: Office_MediaCompany | 行业: Input1:Software, Output:Media",Placesstages,舞台方位传媒
+Plasticold,"公司: Industrial_WarehousePlastics; Industrial_PlasticsFactory; Commercial_PlasticsStore | 行业: Output:Plastics; Input1:Petrochemicals, Input2:Chemicals, Output:Plastics; Input1:Plastics, Output:Plastics, Type:Service",Plasticold,恒塑塑胶
+PNGMedia,"公司: Office_MediaCompany | 行业: Input1:Software, Output:Media",PNG Media,图景传媒
+PPMchem,"公司: Industrial_WarehouseChemicals; Industrial_ChemicalFactory | 行业: Output:Chemicals; Input1:Minerals, Input2:Oil, Output:Chemicals",PPMchem,微克化工
+PrimevalPetrol,"公司: Industrial_WarehouseOil; Industrial_OilRefinery; Commercial_GasStation | 行业: Output:Oil; Input1:Oil, Output:Petrochemicals; Input1:Petrochemicals, Output:Petrochemicals, Type:Service",Primeval Petrol,远古石油
+Pteropus,"公司: Office_TelecomCompany | 行业: Input1:Electronics, Input2:Software, Output:Telecom",Pteropus,翼蝠通信
+RawrunBikes,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Rawrun Bikes,野跑单车
+RoadGarbage,"公司: Commercial_VehicleStore | 行业: Input1:Vehicles, Output:Vehicles, Type:Service",RoadGarbage,路边收二手车
+RustBucket,"公司: Industrial_WarehouseMetals; Industrial_MetalSmelter | 行业: Output:Metals; Input1:Ore, Output:Metals",Rust Bucket,熔锈冶金
+SaveMoney,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Save Money,省心优选
+SawEd,"公司: Industrial_WarehouseTimber; Industrial_SawMill | 行业: Output:Timber; Input1:Wood, Output:Timber",SawEd,索德木材
+ScandicBaron,"公司: Industrial_WarehouseElectronics; Industrial_WarehousePlastics; Industrial_ElectronicsFactory; Industrial_PlasticsFactory; Commercial_ElectronicsStore; Commercial_PlasticsStore | 行业: Output:Electronics; Output:Plastics; Input1:Minerals, Input2:Plastics, Output:Electronics; Input1:Petrochemicals, Input2:Chemicals, Output:Plastics; Input1:Electronics, Output:Electronics, Type:Service; Input1:Plastics, Output:Plastics, Type:Service",Scandic Baron,北欧男爵
+Shinies,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Shinies,璀璨精品
+ShopLate,"公司: Industrial_WarehouseConvenienceFood; Industrial_WarehouseFood; Commercial_FoodStore; Commercial_ConvenienceFoodStore | 行业: Output:ConvenienceFood; Output:Food; Input1:Food, Output:Food, Type:Service; Input1:ConvenienceFood, Output:ConvenienceFood, Type:Service",ShopLate,夜猫便利
+ShortMarket,"公司: Industrial_WarehouseConvenienceFood; Industrial_WarehouseFood; Commercial_FoodStore; Commercial_ConvenienceFoodStore | 行业: Output:ConvenienceFood; Output:Food; Input1:Food, Output:Food, Type:Service; Input1:ConvenienceFood, Output:ConvenienceFood, Type:Service",ShortMarket,速购超市
+SilentSaulsRealEstate,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Silent Saul's Real Estate,静谧房产
+SingTapeRecords,"公司: Office_MediaCompany | 行业: Input1:Software, Output:Media",SingTape Records,咏声唱片
+SirCutAlot,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Sir Cut Alot,快剪先生
+SixtySum,"公司: Industrial_WarehouseConvenienceFood; Industrial_WarehouseFood; Industrial_WarehouseFish; Industrial_ConvenienceFoodFromFish; Commercial_FoodStore; Commercial_ConvenienceFoodStore | 行业: Output:ConvenienceFood; Output:Food; Output:Fish; Input1:Fish, Output:ConvenienceFood; Input1:Food, Output:Food, Type:Service; Input1:ConvenienceFood, Output:ConvenienceFood, Type:Service",SixtySum,六十汇
+SleePeas,"公司: Commercial_Hotel | 行业: Input1:Food, Output:Lodging, Type:Service",Slee Peas,酣眠旅店
+Smeltingmore,"公司: Industrial_WarehouseMetals; Industrial_MetalSmelter | 行业: Output:Metals; Input1:Ore, Output:Metals",Smeltingmore,多炼冶金
+SmeltNBlast,"公司: Industrial_WarehouseMetals; Industrial_MetalSmelter | 行业: Output:Metals; Input1:Ore, Output:Metals",Smelt 'n Blast,熔炼轰鸣
+SnafuInsurance,"公司: Office_Bank | 行业: Input1:Software, Output:Financial",Snafu Insurance,万全保险
+SneakyRidge,"公司: Industrial_TextileFromLivestockFactory; Commercial_FashionStore | 行业: Input1:Livestock, Output:Textiles; Input1:Textiles, Output:Textiles, Type:Service",Sneaky Ridge,隐峰皮饰
+SoftEnds,"公司: Industrial_WarehousePaper; Industrial_WarehouseWood; Industrial_ForestryExtractor; Industrial_PaperMill | 行业: Output:Paper; Output:Wood; Input1:Timber, Output:Paper",Soft Ends,柔末纸坊
+SomethingAndAll,"公司: Industrial_WarehouseConvenienceFood; Industrial_WarehouseFood; Commercial_FoodStore; Commercial_ConvenienceFoodStore | 行业: Output:ConvenienceFood; Output:Food; Input1:Food, Output:Food, Type:Service; Input1:ConvenienceFood, Output:ConvenienceFood, Type:Service",Something & All,全品汇超市
+Spasm,"公司: Industrial_WarehouseElectronics; Industrial_ElectronicsFactory; Commercial_ElectronicsStore | 行业: Output:Electronics; Input1:Minerals, Input2:Plastics, Output:Electronics; Input1:Electronics, Output:Electronics, Type:Service",Spasm,跳跃电子
+SpdS,"公司: Commercial_FoodStore | 行业: Input1:Food, Output:Food, Type:Service",SpdS,速达生鲜
+Speltware,"公司: Office_SoftwareCompany | 行业: Input1:Electronics, Output:Software",Speltware,斯派特科技
+SpendelzRides,"公司: Industrial_WarehouseVehicles; Commercial_VehicleStore | 行业: Output:Vehicles; Input1:Vehicles, Output:Vehicles, Type:Service",Spendelz Rides,斯本德租车
+SpinningSpool,"公司: Industrial_WarehouseCotton; Industrial_CottonExtractor; Industrial_TextileFromCottonFactory | 行业: Output:Cotton; Input1:Cotton, Output:Textiles",Spinning Spool,锦绣纺织
+SpinOffBakeries,"prefix; Commercial_ConvenienceFoodStore | 行业: Input1:Grain, Output:ConvenienceFood; Input1:ConvenienceFood, Output:ConvenienceFood, Type:Service",Spin-Off Bakeries,转角烘焙
+SquarePackages,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Square Packages,方正百货
+StadelmannAndBardolf,"公司: Office_Bank | 行业: Input1:Software, Output:Financial",Stadelmann & Bardolf,施巴联合金融
+StArmandsGoblet,"公司: Industrial_WarehouseBeverages; Commercial_Bar; Commercial_LiquorStore | 行业: Output:Beverages; Input1:Beverages, Output:Entertainment, Type:Service; Input1:Beverages, Output:Beverages, Type:Service",St. Armand's Goblet,圣曼爵酒庄
+StChirpsMortuary,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",St. Chirps Mortuary,宁鸣殡仪
+SteelSaurus,"公司: Industrial_WarehouseSteel; Industrial_SteelPlant | 行业: Output:Steel; Input1:Metals, Input2:Coal, Output:Steel",SteelSaurus,钢龙重工
+StefansStump,"公司: Industrial_SawMill | 行业: Input1:Wood, Output:Timber",Stefan's Stump,斯蒂芬木材
+StrongarmMixing,"公司: Industrial_WarehouseConcrete; Industrial_ConcreteFactory | 行业: Output:Concrete; Input1:Stone, Output:Concrete",Strongarm Mixing,铁臂搅拌
+SugarSpike,"公司: Industrial_WarehouseBeverages; Industrial_BeverageFromVegetablesFactory | 行业: Output:Beverages; Input1:Vegetables, Output:Beverages",Sugar Spike,甜刺饮品
+SunAsana,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Sun Asana,朝阳瑜伽
+Szoftver,"公司: Office_SoftwareCompany | 行业: Input1:Electronics, Output:Software",Szoftver,索夫科技
+TattooStudio,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Tattoo Studio,墨刺工坊
+TeakStoolCo,"公司: Industrial_WarehouseFurniture; Industrial_FurnitureFactory; Commercial_FurnitureStore | 行业: Output:Furniture; Input1:Timber, Output:Furniture; Input1:Furniture, Output:Furniture, Type:Service",Teak Stool Co.,柚木坊家具
+TechOMat,"公司: Office_SoftwareCompany | 行业: Input1:Electronics, Output:Software",Tech-o-Mat,科技魔方
+TekkVinyl,"公司: Industrial_WarehousePlastics; Industrial_PlasticsFactory | 行业: Output:Plastics; Input1:Petrochemicals, Input2:Chemicals, Output:Plastics",TekkVinyl,特科乙烯
+Texstailors,"公司: Industrial_TextileFromCottonFactory; Industrial_TextileFromPetrochemicalsFactory; Commercial_FashionStore | 行业: Input1:Cotton, Output:Textiles; Input1:Petrochemicals, Output:Textiles; Input1:Textiles, Output:Textiles, Type:Service",Texs Tailors,特丝裁缝
+THELawAndAccounting,"公司: Office_Bank | 行业: Input1:Software, Output:Financial",THE Law & Accounting,宏律会计
+ThickDigital,"公司: Office_SoftwareCompany; Commercial_ElectronicsStore | 行业: Input1:Electronics, Output:Software; Input1:Electronics, Output:Electronics, Type:Service",Thick Digital,厚码数码
+Thoseshows,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Those shows,众汇演艺
+TinyToys,"公司: Industrial_WarehouseElectronics; Industrial_WarehousePlastics; Commercial_RecreactionStore; Industrial_ElectronicsFactory; Industrial_PlasticsFactory; Commercial_PlasticsStore | 行业: Output:Electronics; Output:Plastics; Output:Recreation, Type:Service; Input1:Minerals, Input2:Plastics, Output:Electronics; Input1:Petrochemicals, Input2:Chemicals, Output:Plastics; Input1:Plastics, Output:Plastics, Type:Service",Tiny Toys,微趣玩具
+TreasureTroveComics,"公司: Commercial_BookStore | 行业: Input1:Paper, Output:Paper, Type:Service",Treasure Trove Comics,藏宝漫屋
+Trikoosana,"公司: Commercial_RecreactionStore | 行业: Output:Recreation, Type:Service",Trikoosana,三叶健身
+TurttleShell,"公司: Industrial_WarehouseTextiles; Industrial_TextileFromPetrochemicalsFactory; Commercial_FashionStore | 行业: Output:Textiles; Input1:Petrochemicals, Output:Textiles; Input1:Textiles, Output:Textiles, Type:Service",Turttle Shell,龟壳时尚
+VelvetDuds,"公司: Industrial_TextileFromCottonFactory | 行业: Input1:Cotton, Output:Textiles",Velvet Duds,华绒织造
+Waffords,"公司: Industrial_TextileFromPetrochemicalsFactory | 行业: Input1:Petrochemicals, Output:Textiles",Waffords,华福纺织
+Wingbacks,"公司: Industrial_WarehouseElectronics; Commercial_ElectronicsStore | 行业: Output:Electronics; Input1:Electronics, Output:Electronics, Type:Service",Wingbacks,盈众电子
+Wolmsburys,"公司: Industrial_WarehouseGrain; Industrial_WarehouseBeverages; Industrial_WarehouseFood; Industrial_GrainExtractor; Industrial_BeverageFromGrainFactory; Industrial_ConvenienceFoodFromGrainFactory | 行业: Output:Grain; Output:Beverages; Output:Food; Input1:Grain, Output:Beverages; Input1:Grain, Output:ConvenienceFood",Wolmsbury's,沃姆斯伯里谷物
+WovenWool,"公司: Industrial_WarehouseTextiles; Commercial_RecreactionStore; Industrial_TextileFromLivestockFactory; Commercial_FashionStore | 行业: Output:Textiles; Output:Recreation, Type:Service; Input1:Livestock, Output:Textiles; Input1:Textiles, Output:Textiles, Type:Service",Woven Wool,织羊毛纺
+Wrebomm,"公司: Industrial_PlasticsFactory; Commercial_PlasticsStore | 行业: Input1:Petrochemicals, Input2:Chemicals, Output:Plastics; Input1:Plastics, Output:Plastics, Type:Service",Wrebomm,瑞博塑业
+Wroommel,"公司: Industrial_VehicleFactory; Commercial_VehicleStore | 行业: Input1:Metals, Input2:Plastics, Output:Vehicles; Input1:Vehicles, Output:Vehicles, Type:Service",Wroommel,轰鸣汽车
+Yaxu,"公司: Industrial_WarehouseBeverages; Commercial_Bar; Industrial_BeverageFromGrainFactory; Industrial_BeverageFromVegetablesFactory; Commercial_LiquorStore | 行业: Output:Beverages; Input1:Beverages, Output:Entertainment, Type:Service; Input1:Grain, Output:Beverages; Input1:Vegetables, Output:Beverages; Input1:Beverages, Output:Beverages, Type:Service",Yaxu,雅旭酒业
