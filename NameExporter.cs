@@ -316,7 +316,7 @@ namespace BetterChineseNames
                     {
                         string shortName = GetShortName(prefix);
                         string chineseName = NameTypeMapping.GetChineseName(shortName);
-                        headerParts.Add(CsvEscape($"官译_{chineseName}"));
+                        headerParts.Add(CsvEscape($"官译_（可空）{chineseName}"));
                     }
                     foreach (var prefix in orderedPrefixes)
                     {

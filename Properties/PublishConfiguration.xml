@@ -10,7 +10,7 @@
 	<LongDescription>
 本 Mod 会对官方译名进行调整，使之更符合中国本土的风格。同时也支持自定义翻译。
 
-内置了两套预置翻译。
+内置了两套预置翻译 + 一套香港（繁体）预置翻译。
 
 ## 名字类
 
@@ -45,7 +45,7 @@
 	<!--Link to the forum post where the mod can be discussed-->
 	<ForumLink Value="https://forum.paradoxplaza.com/forum/threads/betterchinesenames.1894790/" />
 	<!--Version of the mod-->
-	<ModVersion Value="0.1" />
+	<ModVersion Value="0.2" />
 	<!--Recommended version of the base game to use the mod-->
 	<GameVersion Value="1.5.*" />
 	<!--Dependency for the mod, can be set multiple times-->
@@ -53,7 +53,7 @@
 	<!--Required DLC, can be set multiple times. Supported values are "Landmark Buildings", "San Fransisco Set", "Beach Properties", "Urban Promenades", "Modern Architecture"-->
 	<RequiredDLC Value="" />
 	<!--Change log for new version. Single line or multi line. Supports minimal markdown subset-->
-	<ChangeLog Value="" />
+	<ChangeLog Value="0.2：支持增减翻译；增加香港（繁体）预置翻译" />
 	<!--<ChangeLog>
 	</ChangeLog>-->
 	<!--External link, can be set multiple times. supported types are "discord", "github", "youtube", "twitch", "x", "paypal", "patreon", "buymeacoffee", "kofi", "crowdin", "gitlab", "gofundme"-->

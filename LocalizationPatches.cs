@@ -1,3 +1,4 @@
+using Game.Prefabs;
 using Game.UI;
 using System;
 using System.Reflection;
@@ -59,6 +60,22 @@ namespace BetterChineseNames
 
             // 没找到，继续执行原方法
             return true;
+        }
+
+        /// <summary>
+        /// Postfix patch for RandomLocalization.GetLocalizationIndexCount
+        /// 如果我们有自定义的 indexCount，就用我们的值替换返回值
+        /// 这样可以修改随机名称池的大小
+        /// </summary>
+        public static void Postfix_GetLocalizationIndexCount(PrefabBase prefab, string id, ref int __result)
+        {
+            Mod.log.Info($"Postfix_GetLocalizationIndexCount: {id}, {__result}");
+            // 如果我们有自定义的 indexCount，使用我们的值
+            if (id != null && I18n.CustomIndexCounts.TryGetValue(id, out int customCount))
+            {
+                __result = customCount;
+                Mod.log.Info($"Postfix_GetLocalizationIndexCount: {id}, {__result} -> {customCount}");
+            }
         }
 
         /// <summary>

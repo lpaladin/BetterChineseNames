@@ -7,6 +7,7 @@ using Colossal.Localization;
 using Colossal.Logging;
 using Game;
 using Game.Modding;
+using Game.Prefabs;
 using Game.SceneFlow;
 using Game.UI;
 using Game.UI.Localization;
@@ -87,6 +88,9 @@ namespace BetterChineseNames
                 // 2. Patch NameSystem.GetRenderedLabelName 方法（实体名称层）
                 PatchGetRenderedLabelName();
 
+                // 3. Patch RandomLocalization.GetLocalizationIndexCount 方法（名称池大小）
+                PatchGetLocalizationIndexCount();
+
                 log.Info("All Harmony patches applied.");
             }
             catch (System.Exception ex)
@@ -140,6 +144,30 @@ namespace BetterChineseNames
             else
             {
                 log.Warn($"Failed to patch GetRenderedLabelName. Original: {originalMethod != null}, Prefix: {prefixMethod != null}");
+            }
+        }
+
+        private void PatchGetLocalizationIndexCount()
+        {
+            var originalMethod = typeof(RandomLocalization).GetMethod(
+                "GetLocalizationIndexCount",
+                BindingFlags.Public | BindingFlags.Static,
+                null,
+                new[] { typeof(PrefabBase), typeof(string) },
+                null);
+
+            var postfixMethod = typeof(LocalizationPatches).GetMethod(
+                "Postfix_GetLocalizationIndexCount",
+                BindingFlags.Public | BindingFlags.Static);
+
+            if (originalMethod != null && postfixMethod != null)
+            {
+                m_Harmony.Patch(originalMethod, postfix: new HarmonyMethod(postfixMethod));
+                log.Info("Patched RandomLocalization.GetLocalizationIndexCount");
+            }
+            else
+            {
+                log.Warn($"Failed to patch GetLocalizationIndexCount. Original: {originalMethod != null}, Postfix: {postfixMethod != null}");
             }
         }
 

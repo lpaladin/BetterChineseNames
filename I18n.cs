@@ -1,6 +1,8 @@
 using Colossal;
 using Colossal.Json;
 using Game.SceneFlow;
+using Game.UI;
+using Game.UI.Localization;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -62,15 +64,69 @@ namespace BetterChineseNames
         private static string s_LocalesPath;
 
         /// <summary>
-        /// 用于在 UI 中显示错误的日志记录器
+        /// 显示确认对话框
         /// </summary>
-        private static readonly Colossal.Logging.ILog s_UILog = 
-            Colossal.Logging.LogManager.GetLogger("BetterChineseNames.I18n").SetShowsErrorsInUI(true);
+        /// <param name="title">标题</param>
+        /// <param name="message">消息内容</param>
+        /// <param name="isError">是否为错误（影响日志级别）</param>
+        private static void ShowConfirmationDialog(string title, string message, bool isError = false)
+        {
+            // 记录到日志
+            if (isError)
+            {
+                Mod.log.Error(message);
+            }
+            else
+            {
+                Mod.log.Warn(message);
+            }
+
+            // 显示对话框
+            try
+            {
+                // LocalizedString 构造函数: (id, value, args)
+                // 对于纯文本消息，使用空 id 和实际文本作为 value
+                var dialog = new ConfirmationDialog(
+                    new LocalizedString?(new LocalizedString(title, title, null)),
+                    new LocalizedString(message, message, null),
+                    "嗯",
+                    null,
+                    Array.Empty<LocalizedString>());
+                GameManager.instance.userInterface.appBindings.ShowConfirmationDialog(dialog, delegate(int msg) { });
+            }
+            catch (Exception ex)
+            {
+                Mod.log.Error(ex, "显示对话框失败");
+            }
+        }
 
         /// <summary>
         /// 当前语言的自定义翻译字典，供 Harmony patch 使用
         /// </summary>
         public static Dictionary<string, string> CurrentLocaleDictionary { get; private set; } = new Dictionary<string, string>();
+
+        /// <summary>
+        /// 自定义的 indexCounts 字典，供 Harmony patch 拦截 GetLocalizationIndexCount 使用
+        /// key: localizationID (如 "Assets.ANIMAL_NAME_DOG")
+        /// value: 条目数量
+        /// </summary>
+        public static Dictionary<string, int> CustomIndexCounts { get; private set; } = new Dictionary<string, int>();
+
+        /// <summary>
+        /// 上一次加载的 indexCounts，用于检测数量变化
+        /// </summary>
+        private static Dictionary<string, int> s_PreviousIndexCounts = new Dictionary<string, int>();
+
+        /// <summary>
+        /// 从 localizationID 获取中文名称
+        /// 例如: "Assets.ALLEY_NAME" -> "巷名"
+        /// </summary>
+        private static string GetChineseNameFromId(string id)
+        {
+            // 去掉 "Assets." 前缀
+            string shortName = id.StartsWith("Assets.") ? id.Substring(7) : id;
+            return NameTypeMapping.GetChineseName(shortName);
+        }
 
         /// <summary>
         /// 初始化 I18n 系统
@@ -172,6 +228,7 @@ namespace BetterChineseNames
                 string[] hintFiles = new[]
                 {
                     "可以编辑来自定义翻译（内含原文）",
+                    "行数可以比内置多，官译可留空",
                     "如果改错了可以从设置里重置"
                 };
 
@@ -220,8 +277,11 @@ namespace BetterChineseNames
             }
 
             s_LocaleSource.Clear();
+            // 保存上一次的 indexCounts，用于后续比较
+            s_PreviousIndexCounts = new Dictionary<string, int>(CustomIndexCounts);
             // 清空 Harmony patch 使用的字典
             CurrentLocaleDictionary = new Dictionary<string, string>();
+            CustomIndexCounts = new Dictionary<string, int>();
             int totalEntries = 0;
             var loadErrors = new List<string>();
 
@@ -279,10 +339,111 @@ namespace BetterChineseNames
             // 如果有加载错误，在 UI 中显示
             if (loadErrors.Count > 0)
             {
-                string errorSummary = $"更好的中文译名: {loadErrors.Count} 个文件加载失败\n" +
+                string errorSummary = $"{loadErrors.Count} 个文件加载失败\n" +
                     string.Join("\n", loadErrors) + 
-                    "\n\n请点击【继续】，然后前往 设置 → 更好的中文译名 → 自定义 → 撤销所有自定义翻译 来重置文件。";
-                s_UILog.Error(errorSummary);
+                    "\n\n请前往 设置 → 更好的中文译名 → 自定义 → 撤销所有自定义翻译 来重置文件。";
+                ShowConfirmationDialog("更好的中文译名：加载错误", errorSummary, isError: true);
+            }
+
+            // 检测并提示翻译数量差异
+            CheckAndShowIndexCountDifferences();
+        }
+
+        /// <summary>
+        /// 检测翻译数量差异并在 UI 中显示提示
+        /// </summary>
+        private static void CheckAndShowIndexCountDifferences()
+        {
+            // 首次加载时（上一次为空），不显示提示
+            if (s_PreviousIndexCounts.Count == 0 || CustomIndexCounts.Count == 0)
+            {
+                return;
+            }
+
+            try
+            {
+                var moreItems = new List<string>();  // 比原来多
+                var lessItems = new List<string>();  // 比原来少
+
+                // 检查所有当前的类型
+                foreach (var kvp in CustomIndexCounts)
+                {
+                    string id = kvp.Key;
+                    int newCount = kvp.Value;
+
+                    // 获取原来的数量
+                    int oldCount = 0;
+                    s_PreviousIndexCounts.TryGetValue(id, out oldCount);
+
+                    if (newCount == oldCount)
+                    {
+                        continue; // 数量相同，跳过
+                    }
+
+                    // 获取中文名称（复用 NameTypeMapping）
+                    string chineseName = GetChineseNameFromId(id);
+
+                    if (newCount > oldCount)
+                    {
+                        moreItems.Add($"  • {chineseName}: {oldCount} → {newCount} (+{newCount - oldCount})");
+                    }
+                    else
+                    {
+                        lessItems.Add($"  • {chineseName}: {oldCount} → {newCount} (-{oldCount - newCount})");
+                    }
+                }
+
+                // 检查原来有但现在没有的类型（被禁用的）
+                foreach (var kvp in s_PreviousIndexCounts)
+                {
+                    if (!CustomIndexCounts.ContainsKey(kvp.Key))
+                    {
+                        string chineseName = GetChineseNameFromId(kvp.Key);
+                        lessItems.Add($"  • {chineseName}: {kvp.Value} → 0 (已禁用)");
+                    }
+                }
+
+                // 如果没有差异，直接返回
+                if (moreItems.Count == 0 && lessItems.Count == 0)
+                {
+                    return;
+                }
+
+                // 构建提示消息
+                var messageParts = new List<string>();
+
+                if (moreItems.Count > 0)
+                {
+                    messageParts.Add("【翻译数量增加】");
+                    messageParts.AddRange(moreItems);
+                    messageParts.Add("");
+                }
+
+                if (lessItems.Count > 0)
+                {
+                    messageParts.Add("【翻译数量减少】");
+                    messageParts.AddRange(lessItems);
+                    messageParts.Add("");
+                }
+
+                messageParts.Add("─────────────────────────");
+                messageParts.Add("");
+                messageParts.Add("⚠ 副作用说明：");
+                messageParts.Add("• 数量增加：只有新创建的物件才可能使用新翻译");
+                messageParts.Add("• 数量减少：部分已有物件的翻译会丢失（显示为 Assets.STREET_NAME:123 等）");
+                messageParts.Add("");
+                messageParts.Add("⚠ 重要提示：");
+                messageParts.Add("• 现在数量变多，那么以后切换回来数量会变少 - 两种副作用都会发生");
+                messageParts.Add("• 现在数量变少，那么以后切换回来数量会变多 - 两种副作用都会发生");
+                messageParts.Add("");
+                messageParts.Add("⚠ 数量变化必须重启游戏才能生效！");
+
+                string message = string.Join("\n", messageParts);
+                ShowConfirmationDialog("更好的中文译名：翻译数量变化", message, isError: false);
+            }
+            catch (Exception ex)
+            {
+                Mod.log.Error(ex, "检测翻译数量差异时出错");
             }
         }
 
@@ -331,7 +492,10 @@ namespace BetterChineseNames
                     continue;
                 }
 
-                var entries = LoadNameCsv(filePath, keyPrefixes, setting);
+                // 品牌名不需要设置 indexCounts（品牌名使用固定的 ID 格式）
+                bool isCompanyName = fileName == "品牌名.csv";
+                var (entries, typeCounts) = LoadNameCsv(filePath, keyPrefixes, setting);
+                
                 if (entries.Count > 0)
                 {
                     s_LocaleSource.AddEntries(entries);
@@ -342,6 +506,17 @@ namespace BetterChineseNames
                     }
                     totalCount += entries.Count;
                     Mod.log.Info($"Loaded {fileName}: {entries.Count} entries");
+
+                    // 设置每种类型的 indexCounts（除了品牌名）
+                    // 这些值会被 Harmony patch 用于拦截 GetLocalizationIndexCount
+                    if (!isCompanyName)
+                    {
+                        foreach (var (typePrefix, count) in typeCounts)
+                        {
+                            CustomIndexCounts[typePrefix] = count;
+                            Mod.log.Info($"Set CustomIndexCount for {typePrefix}: {count}");
+                        }
+                    }
                 }
                 else
                 {
@@ -357,16 +532,18 @@ namespace BetterChineseNames
         /// <summary>
         /// 加载名称 CSV 文件并转换为 locale dict
         /// CSV 格式: 官译_xxx, 你的翻译_xxx, ...
+        /// 返回：(翻译条目字典, 每种类型的条目数量)
         /// </summary>
-        private static Dictionary<string, string> LoadNameCsv(string filePath, string[] keyPrefixes, Setting setting)
+        private static (Dictionary<string, string> entries, List<(string typePrefix, int count)> typeCounts) LoadNameCsv(string filePath, string[] keyPrefixes, Setting setting)
         {
             var result = new Dictionary<string, string>();
+            var typeCounts = new List<(string typePrefix, int count)>();
 
             try
             {
                 // 使用共享读取模式，允许文件被 Excel 等程序占用时也能读取
                 var lines = ReadAllLinesShared(filePath);
-                if (lines.Length < 2) return result;
+                if (lines.Length < 2) return (result, typeCounts);
 
                 // 解析表头，找到"你的翻译_"列
                 var headers = ParseCsvLine(lines[0]);
@@ -385,8 +562,23 @@ namespace BetterChineseNames
                 bool isCompanyName = filePath.EndsWith("品牌名.csv");
                 int brandIdColumn = isCompanyName ? 0 : -1;
 
+                // 统计每种类型的有效行数（用于设置 indexCounts）
+                // 对于非品牌名，有效行数 = 数据行数（lines.Length - 1，减去表头）
+                int dataRowCount = lines.Length - 1;
+                
+                // 跳过末尾的空行
+                while (dataRowCount > 0)
+                {
+                    var lastLineValues = ParseCsvLine(lines[dataRowCount]);
+                    if (lastLineValues.Count > 0 && lastLineValues.Any(v => !string.IsNullOrWhiteSpace(v)))
+                    {
+                        break;
+                    }
+                    dataRowCount--;
+                }
+
                 // 处理数据行
-                for (int lineIndex = 1; lineIndex < lines.Length; lineIndex++)
+                for (int lineIndex = 1; lineIndex <= dataRowCount; lineIndex++)
                 {
                     var values = ParseCsvLine(lines[lineIndex]);
                     if (values.Count == 0) continue;
@@ -421,13 +613,26 @@ namespace BetterChineseNames
                         result[key] = translation;
                     }
                 }
+
+                // 记录每种类型的条目数量（非品牌名）
+                if (!isCompanyName)
+                {
+                    foreach (var (_, typeName) in translationColumns)
+                    {
+                        if (IsTypeEnabled(typeName, setting))
+                        {
+                            string prefix = GetKeyPrefixFromTypeName(typeName, keyPrefixes);
+                            typeCounts.Add((prefix, dataRowCount));
+                        }
+                    }
+                }
             }
             catch (Exception ex)
             {
                 Mod.log.Error(ex, $"Failed to load CSV: {filePath}");
             }
 
-            return result;
+            return (result, typeCounts);
         }
 
         /// <summary>

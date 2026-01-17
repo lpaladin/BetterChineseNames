@@ -1,0 +1,16 @@
+Key,名称,官译,你的翻译
+Assets.ADDRESS_NAME_FORMAT,地址格式,{NUMBER} {ROAD},{ROAD} {NUMBER} 號
+Assets.CITIZEN_NAME_FORMAT,市民姓名格式,{LAST_NAME}·{FIRST_NAME},{LAST_NAME}{FIRST_NAME}
+Assets.NAMED_ADDRESS_NAME_FORMAT,命名地址格式,{NAME}，{NUMBER} {ROAD},{ROAD} {NUMBER} 號，{NAME}
+Assets.ROUTE_NAME[Bus Line],公交线路,公交路线 {NUMBER},巴士 {NUMBER} 號線
+Assets.ROUTE_NAME[Cargo Airplane Route],货机航线,货机路线 {NUMBER},貨機 {NUMBER} 號航線
+Assets.ROUTE_NAME[Cargo Ship Route],货船航线,货船路线 {NUMBER},貨船 {NUMBER} 號航線
+Assets.ROUTE_NAME[Cargo Train Route],货运火车线路,货运火车路线 {NUMBER},貨運列車 {NUMBER} 號線
+Assets.ROUTE_NAME[Fishing Line],捕鱼线路,捕鱼路线{NUMBER},捕魚 {NUMBER} 號線
+Assets.ROUTE_NAME[Oil Tanker Route],油轮航线,油轮航线{NUMBER},油輪 {NUMBER} 號航線
+Assets.ROUTE_NAME[Passenger Airplane Line],客机航线,客机路线 {NUMBER},客機 {NUMBER} 號航線
+Assets.ROUTE_NAME[Passenger Ferry Line],摆渡航线,摆渡路线{NUMBER},渡輪 {NUMBER} 號線
+Assets.ROUTE_NAME[Passenger Ship Line],客船航线,客船路线 {NUMBER},客船 {NUMBER} 號航線
+Assets.ROUTE_NAME[Passenger Train Line],客运火车线路,客运火车路线 {NUMBER},客運列車 {NUMBER} 號線
+Assets.ROUTE_NAME[Subway Line],地铁线路,地铁路线 {NUMBER},港鐵 {NUMBER} 號線
+Assets.ROUTE_NAME[Tram Line],有轨电车线路,有轨电车路线 {NUMBER},電車 {NUMBER} 號線
